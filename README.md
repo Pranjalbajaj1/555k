@@ -62,3 +62,17 @@ keyframes, embeddings = extract_keyframes(
 
 # 3. Visualize
 # The notebook includes code to display the selected keyframes.
+## 🧠 How It Works
+
+1.  **Frame Extraction**: The script reads the video file and samples frames at a specified interval (e.g., 1 frame per second).
+2.  **Embedding Generation**: Each sampled frame is passed through the **SigLIP** model to create a dense vector representation.
+3.  **Clustering**: The embeddings are grouped using **K-Means clustering**.
+4.  **Selection**: The algorithm identifies the frame closest to the centroid of each cluster. This ensures that the final list of keyframes covers the "story" of the video without redundancy.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
